@@ -41,7 +41,7 @@ class WriteDiaryViewController: UIViewController {
         self.datePicker.datePickerMode = .date
         self.datePicker.preferredDatePickerStyle = .wheels
         self.datePicker.addTarget(self, action: #selector(datePickerValueDidChange), for: .valueChanged)
-        self.datePicker.locale = Locale(identifier: "en_US")  // ko_KR
+        self.datePicker.locale = Locale(identifier: "en_US")  // cf. ko_KR
         self.dateTextField.inputView = self.datePicker
     }
     
